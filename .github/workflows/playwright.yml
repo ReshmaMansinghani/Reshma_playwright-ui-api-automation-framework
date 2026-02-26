@@ -1,4 +1,4 @@
-nname: 🎭 Playwright Automation Tests
+name: 🎭 Playwright Automation Tests
 
 on:
   push:
