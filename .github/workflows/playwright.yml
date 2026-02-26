@@ -1,4 +1,4 @@
-name: 🎭 Playwright Automation Tests
+nname: 🎭 Playwright Automation Tests
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run all tests
-        run: npx playwright test
+        run: npx playwright test --project=chromium
 
       - name: Upload HTML Report
         uses: actions/upload-artifact@v4
@@ -33,4 +33,4 @@ jobs:
         with:
           name: playwright-report
           path: playwright-report/
-          retention-days: 14 
+          retention-days: 14
